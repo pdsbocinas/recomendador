@@ -1,0 +1,33 @@
+AppBundle\Entity\Recomendador:
+    type: entity
+    table: recomendador
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        day:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+        place:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+        entryDate:
+            type: date
+            nullable: false
+            column: entry_date
+        outputDay:
+            type: date
+            nullable: false
+            column: output_day
+    lifecycleCallbacks: {  }

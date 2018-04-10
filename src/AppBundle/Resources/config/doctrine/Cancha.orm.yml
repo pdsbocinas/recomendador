@@ -1,0 +1,17 @@
+AppBundle\Entity\Cancha:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Repository\CanchaRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        ancho:
+            type: integer
+        largo:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }
